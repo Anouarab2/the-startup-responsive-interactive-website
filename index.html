@@ -7,22 +7,17 @@
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="#">Kopen</a></li>
-            <li><a href="#">Huren</a></li>
-            <li><a href="#">Verkopen</a></li>
-        </ul>
+        <a href="index.html"><img src="assets/logo.png" alt="logo van funda"></a>
         <nav>
-            <a href="index.html"><img src="assets/logo.png" alt="logo van funda"></a>
-            <label>
-                <button>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            menu    
-            </label>
+            <ul>
+                <li><a href="#">Kopen</a></li>
+                <li><a href="#">Huren</a></li>
+                <li><a href="#">Verkopen</a></li>
+            </ul>
         </nav>
+        <button>
+            menu
+        </button>
     </header>
 
     <main>
@@ -33,14 +28,41 @@
             <img src="assets/huis.jpg" alt="3D tour">
             <label><video muted controls src="assets/diegoVid.mp4"></video>video</label>
         </section>
-        <section>
+
+        <!-- <section>
             <h1>Apollolaan 11</h1>
             <p>1077 AA Amsterdam</p> <p>Niewe pijp</p>
-            <p>181m2</p> <p>204m2</p> <p>7</p>
             <p>$3.250.000 k.k.</p>
             <p>wat worden mijn maandlasten</p>
             <label><img src="assets/kaart.webp">kaart</label>
+        </section> -->
+
+        <section>
+            <h1>Apollolaan 11</h1>
+            <p>1077 AA Amsterdam</p> <p>Niewe pijp</p>
+            <dl>
+                <img src="assets/huisOppervlakte.png" alt="">
+                <dt>181m2</dt>
+
+                <img src="assets/perceel.png" alt="">
+                <dt>204m2</dt>
+
+                <img src="assets/slaapkamers.png" alt="">
+                <dt>7</dt>
+            </dl>
+
+            <p>$3.250.000 k.k.</p>
+
+            <dl>
+                <img src="assets/rekenmachine.png" alt="">
+                <button popovertarget="popup">Wat worden mijn maandlasten?</button>
+                <dialog popover id="popup">
+                    <p>Voorbeeld van maandlasten.</p>
+                    <button popovertarget="popup" popovertargetaction="hide">Terug naar site</button>
+                  </dialog>
+            </dl>
         </section>
+
         <section>
             <h2>omschrijving</h2>
             <p>Bent u op zoek naar een ruim 
