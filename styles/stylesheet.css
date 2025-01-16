@@ -1,0 +1,17 @@
+body{
+
+    /* kleuren */
+    --main-color: #ff9a1f;
+    --link-color: #0071b3;
+    --main-text-color: black;
+    --secondary-text-color: white;
+    --detail-text-color: #999;
+
+    /* maten */
+    --heading1-small: 1.5rem;
+    --heading1-medium: 1.875rem;
+    --heading1-big: 2.25rem;
+    --heading2-small: 1.25rem;
+    --heading2-medium: 1.875rem;
+
+}
