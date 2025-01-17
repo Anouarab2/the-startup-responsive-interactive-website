@@ -47,6 +47,7 @@ main{
     border: none;
     padding: .5em;
     border-radius: var(--border-radius-small);
+    border: solid var(--main-text-color);
 }
 
 .active{
@@ -84,7 +85,7 @@ video.groter{
     width: 6em;
     height: 4em;
     /* max-height: 4em; */
-    border: solid black;
+    border: solid var(--main-text-color);
     border-radius: var(--border-radius-big);
 }
 
