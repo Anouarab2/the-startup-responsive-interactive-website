@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
     <script src="scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="assets/logo.png" alt="logo van funda"></a>
+        <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo van funda"></a>
         <nav>
             <ul>
                 <li><a href="#">Kopen</a></li>
@@ -24,34 +27,37 @@
     </header>
 
     <main>
-        <img src="assets/huis.jpg" alt="huis met ruime groene tuin">
 
-        <button>
-            Bewaar
-        </button>
+        <section class="foto-section">
+            <img class="main-foto" src="assets/huis.jpg" alt="huis met ruime groene tuin">
 
-        <button>
-            Deel
-        </button>
+            <button class="bewaar-deel">
+                Bewaar
+            </button>
+    
+            <button class="bewaar-deel">
+                Deel
+            </button>
+        </section>
 
-        <section>
+        <section class="media-section">
             <figure>
-                <img src="assets/plattegrond.jpg" alt="verschillende plattegrondfoto's">
+                <img class="onder-media" class="plat" src="assets/plattegrond.jpg" alt="verschillende plattegrondfoto's">
                 <figcaption>Plattegronden</figcaption>
             </figure>
 
             <figure>
-                <img src="assets/" alt="360° foto's van het huis">
+                <img class="onder-media" src="assets/" alt="360° foto's van het huis">
                 <figcaption>360° foto's</figcaption>
             </figure>
 
-            <figure>
-                <video muted controls src="assets/diegoVid.mp4"></video>
+            <figure class="video-figure">
+                <video class="onder-media" muted controls src="assets/diegoVid.mp4"></video>
                 <figcaption>video</figcaption>
             </figure>
 
             <figure>
-                <img src="assets/" alt="3D foto's van het huis">
+                <img class="onder-media" src="assets/" alt="3D foto's van het huis">
                 <figcaption>3D tour</figcaption>
             </figure>
         </section>
@@ -68,20 +74,20 @@
             <h1>Apollolaan 11</h1>
             <p>1077 AA Amsterdam</p> <a href="#">Niewe pijp</a>
             <dl>
-                <img src="assets/huisOppervlakte.png" alt="">
+                <img class="icoon" id="huisje" src="assets/huisOppervlakte.png" alt="">
                 <dt>181m2</dt>
 
-                <img src="assets/perceel.png" alt="">
+                <img class="icoon" id="huis-tuin" src="assets/perceel.png" alt="">
                 <dt>204m2</dt>
 
-                <img src="assets/slaapkamers.png" alt="">
+                <img class="icoon" id="kamers" src="assets/slaapkamers.png" alt="">
                 <dt>7</dt>
             </dl>
 
             <p>$3.250.000 k.k.</p>
 
             <dl>
-                <img src="assets/rekenmachine.png" alt="">
+                <img class="icoon" id="rekenmachine" src="assets/rekenmachine.png" alt="">
                 <button popovertarget="popup">Wat worden mijn maandlasten?</button>
                 <dialog popover id="popup">
                     <p>Voorbeeld van maandlasten.</p>

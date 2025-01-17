@@ -5,7 +5,8 @@ body{
     --link-color: #0071b3;
     --main-text-color: black;
     --secondary-text-color: white;
-    --detail-text-color: #999;
+    --detail-color: #999;
+    --main-background-color: white;
 
     /* maten */
     --heading1-small: 1.5rem;
@@ -13,5 +14,9 @@ body{
     --heading1-big: 2.25rem;
     --heading2-small: 1.25rem;
     --heading2-medium: 1.875rem;
+
+    /* hoeken */
+    --border-radius-small: .2em;
+    --border-radius-big: .5em;
 
 }
