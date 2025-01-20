@@ -1,113 +1,107 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funda</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/stylesheet.css">
-    <script src="scripts/script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo van funda"></a>
-        <nav>
-            <ul>
-                <li><a href="#">Kopen</a></li>
-                <li><a href="#">Huren</a></li>
-                <li><a href="#">Verkopen</a></li>
-            </ul>
-        </nav>
-        <button>
-            menu
-        </button>
-    </header>
 
-    <main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Funda</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <script src="scripts/script.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
 
-        <section class="foto-section">
-            <img class="main-foto" src="assets/huis.jpg" alt="huis met ruime groene tuin">
+    <body>
+        <header>
+            <a href="index.html"><img class="logo" src="assets/logo.png" alt="logo van funda"></a>
+            <nav>
+                <ul class="huis-opties">
+                    <li><a href="#">Kopen</a></li>
+                    <li><a href="#">Huren</a></li>
+                    <li><a href="#">Verkopen</a></li>
+                </ul>
+            </nav>
+            <button class="menu-button">menu</button>
+        </header>
 
-            <button class="bewaar-deel">
-                Bewaar
-            </button>
-    
-            <button class="bewaar-deel">
-                Deel
-            </button>
-        </section>
+        <main>
+            <section class="foto-section">
+                <img class="main-foto" src="assets/huis.jpg" alt="huis met ruime groene tuin">
 
-        <section class="media-section">
-            <figure>
-                <img class="onder-media" class="plat" src="assets/plattegrond.jpg" alt="verschillende plattegrondfoto's">
-                <figcaption>Plattegronden</figcaption>
-            </figure>
+                <button class="bewaar-deel">Bewaar</button>
 
-            <figure>
-                <img class="onder-media" src="assets/" alt="360° foto's van het huis">
-                <figcaption>360° foto's</figcaption>
-            </figure>
+                <button class="bewaar-deel">Deel</button>
+            </section>
 
-            <figure class="video-figure">
-                <video class="onder-media" muted controls src="assets/diegoVid.mp4"></video>
-                <figcaption>video</figcaption>
-            </figure>
+            <section class="media-section">
+                <figure>
+                    <img class="onder-media" class="plat" src="assets/plattegrond.jpg" alt="verschillende plattegrondfoto's">
+                    <figcaption>Plattegronden</figcaption>
+                </figure>
 
-            <figure>
-                <img class="onder-media" src="assets/" alt="3D foto's van het huis">
-                <figcaption>3D tour</figcaption>
-            </figure>
-        </section>
+                <figure>
+                    <img class="onder-media" src="assets/" alt="360° foto's van het huis">
+                    <figcaption>360° foto's</figcaption>
+                </figure>
 
-        <!-- <section>
-            <h1>Apollolaan 11</h1>
-            <p>1077 AA Amsterdam</p> <p>Niewe pijp</p>
-            <p>$3.250.000 k.k.</p>
-            <p>wat worden mijn maandlasten</p>
-            <label><img src="assets/kaart.webp">kaart</label>
-        </section> -->
+                <figure class="video-figure">
+                    <video class="onder-media" muted controls src="assets/diegoVid.mp4"></video>
+                    <figcaption>video</figcaption>
+                </figure>
 
-        <section>
-            <h1>Apollolaan 11</h1>
-            <p>1077 AA Amsterdam</p> <a href="#">Niewe pijp</a>
-            <dl>
-                <img class="icoon" id="huisje" src="assets/huisOppervlakte.png" alt="">
-                <dt>181m2</dt>
+                <figure>
+                    <img class="onder-media" src="assets/" alt="3D foto's van het huis">
+                    <figcaption>3D tour</figcaption>
+                </figure>
+            </section>
 
-                <img class="icoon" id="huis-tuin" src="assets/perceel.png" alt="">
-                <dt>204m2</dt>
+            <!-- <section>
+                <h1>Apollolaan 11</h1>
+                <p>1077 AA Amsterdam</p> <p>Niewe pijp</p>
+                <p>$3.250.000 k.k.</p>
+                <p>wat worden mijn maandlasten</p>
+                <label><img src="assets/kaart.webp">kaart</label>
+            </section> -->
 
-                <img class="icoon" id="kamers" src="assets/slaapkamers.png" alt="">
-                <dt>7</dt>
-            </dl>
+            <section>
+                <h1>Apollolaan 11</h1>
+                <p>1077 AA Amsterdam</p>
+                <a href="#">Niewe pijp</a>
+                <dl>
+                    <img class="icoon" id="huisje" src="assets/huisOppervlakte.png" alt="">
+                    <dt>181m2</dt>
 
-            <p>$3.250.000 k.k.</p>
+                    <img class="icoon" id="huis-tuin" src="assets/perceel.png" alt="">
+                    <dt>204m2</dt>
 
-            <dl>
-                <img class="icoon" id="rekenmachine" src="assets/rekenmachine.png" alt="">
-                <button popovertarget="popup">Wat worden mijn maandlasten?</button>
-                <dialog popover id="popup">
-                    <p>Voorbeeld van maandlasten.</p>
-                    <button popovertarget="popup" popovertargetaction="hide">Terug naar site</button>
-                  </dialog>
-            </dl>
-        </section>
+                    <img class="icoon" id="kamers" src="assets/slaapkamers.png" alt="">
+                    <dt>7</dt>
+                </dl>
 
-        <section>
-            <h2>omschrijving</h2>
-            <p>Bent u op zoek naar een ruim 
-                vrijstaand huis met een compleet woonprogramma 
-                op de begane grond, veel sfeer, comfort en een fijne tuin? 
-                Dan bent u hier aan het juiste adres!</p>
-        </section>
-    </main>
+                <p>$3.250.000 k.k.</p>
 
-    <footer>
-        
-    </footer>
-    
-</body>
+                <dl>
+                    <img class="icoon" id="rekenmachine" src="assets/rekenmachine.png" alt="">
+                    <button popovertarget="popup">Wat worden mijn maandlasten?</button>
+                    <dialog popover id="popup">
+                        <p>Voorbeeld van maandlasten.</p>
+                        <button popovertarget="popup" popovertargetaction="hide">Terug naar site</button>
+                    </dialog>
+                </dl>
+            </section>
+
+            <section>
+                <h2>omschrijving</h2>
+                <p>Bent u op zoek naar een ruim vrijstaand huis met een compleet woonprogramma op de begane grond, veel sfeer, comfort en een fijne tuin? Dan bent u hier aan het juiste adres!</p>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+
 </html>
