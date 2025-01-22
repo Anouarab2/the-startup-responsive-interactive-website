@@ -44,11 +44,13 @@ Verder staat hieronder nog een korte lijst met gebruikte tools en middelen.
  
 De applicatie is op twee manieren te gebruiken: lokaal en op het web. Lokaal is bedoeld voor het testen, experimenten en eventueel verbeteren van de applicatie in een ontwikkel omgeving. Het is ook mogelijk om de applicatie online te bezoeken en te gebruiken, dit kan via de link onder kopje About.
 
-##Ademruimte en inspringen
+## Ademruimte en inspringen
 
 tijdens de refactor workshop ben ik langs mijn code gegaan en heb ik op een paar plekjes waar nodig ademruimte toegevoegd. over het algemeen let ik vanaf het begin al op de ademruimte en het inspringen soms zie ik een paar plekken over het hoofd, deze gevonden met de refactor.
 
 ##Volgorde en nesten van CSS selectors
+
+## Volgorde en nesten van CSS selectors
 
 tijdens de refactor workshop kwam ik erachter dat ik veel meer dingen kon nesten dan ik dacht, toen heb ik de tijd genomen verschillende dingen te nesten zoals hover effecten.
 
