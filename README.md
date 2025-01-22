@@ -12,6 +12,7 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 deze sprint ben ik bezig geweest met een pagina maken voor Funda. op mobiel heb ik ervoor gezorgd dat je 1 foto ziet van het huis en hoe groter het beeldscherm ho emee rfotos je begint te zien. ik heb een interactie op de bewaar knop gezet en een animatie met een disney principe bij het openen van het hamburger menu. 
 
 de pagina is [hier](https://anouarab2.github.io/the-startup-responsive-interactive-website/) live te zien
+
 ![4C67EB2B-E837-4C63-ADD4-6EA6539DBA80_1_105_c](https://github.com/user-attachments/assets/6c7e2e86-31d3-44a6-bec2-e25cc30a6904)
 ![A2005896-B563-45F7-B487-1143481DEF3A_1_201_a](https://github.com/user-attachments/assets/980c3e29-ef0d-4d4c-abf9-63f026912778)
 ![78F71DE2-1235-4D4D-BA30-DDCF622DAD4F_1_201_a](https://github.com/user-attachments/assets/44d804ae-ef74-462c-8834-78fc5056f8e4)
