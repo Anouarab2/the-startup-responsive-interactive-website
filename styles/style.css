@@ -319,6 +319,9 @@ hr{
 
 .huis-info {
     margin-left: 2em;
+    @media(min-width: 500px){
+        margin-left: 15em;
+    }
 }
 
 h1 {
@@ -360,6 +363,10 @@ dt {
 .omschrijving {
     /* margin-left: 2em; */
     padding-inline: 2em;
+    @media(min-width: 500px){
+        margin-left: 15em;
+        padding-inline: 0;
+    }
     @media(min-width: 700px){
         display: flex;
         flex-direction: column;
@@ -377,6 +384,10 @@ h2{
     }
 }
 
+
+footer{
+    background-color: var(--main-background-color);
+}
 @keyframes move {
     10% {
         transform: translateX(2em) translateY(-2em);
