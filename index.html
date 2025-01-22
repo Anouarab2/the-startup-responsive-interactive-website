@@ -23,16 +23,37 @@
                     <li><a href="#">Verkopen</a></li>
                 </ul>
             </nav>
-            <button class="menu-button">menu</button>
+            <nav>
+                <ul class="navigatie">
+                    <li><a href="#">Mijn Huis</a></li>
+                    <li><a href="#">Favorieten</a></li>
+                    <li><a href="#">Inloggen</a></li>
+                </ul>
+            </nav>
+            <button class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <p>menu</p>
+                <!-- <span class="menu-tekst">Menu</span> -->
+            </button>
         </header>
 
         <main>
             <section class="foto-section">
-                <img class="main-foto" src="assets/huis.jpg" alt="huis met ruime groene tuin">
 
-                <button class="bewaar-deel">Bewaar</button>
+                <section class="interactieve-buttons">
+                    <button class="bewaar-deel" id="bewaar-button">Bewaar</button>
+                    <button class="bewaar-deel" id="deel-button">Deel</button>
+                </section>
 
-                <button class="bewaar-deel">Deel</button>
+                <section class="fotos">
+                    <img class="main-foto" src="assets/huis.jpg" alt="huis met ruime groene tuin">
+                    <img class="woonkamer-foto" src="assets/woonkamer.jpg" alt="">
+                    <img class="gang-foto" src="assets/gang.jpg" alt="">
+                    <img class="slaapkamer-foto" src="assets/slaapkamer.jpg" alt="">
+                    <img class="badkamer-foto" src="assets/badkamer.jpg" alt="">
+                </section>
             </section>
 
             <section class="media-section">
@@ -42,39 +63,34 @@
                 </figure>
 
                 <figure>
-                    <img class="onder-media" src="assets/" alt="360° foto's van het huis">
+                    <img class="onder-media" src="assets/360foto.JPG" alt="360° foto's van het huis">
                     <figcaption>360° foto's</figcaption>
                 </figure>
 
                 <figure class="video-figure">
                     <video class="onder-media" muted controls src="assets/diegoVid.mp4"></video>
-                    <figcaption>video</figcaption>
+                    <figcaption><button class="video-button">video</button></figcaption>
                 </figure>
 
                 <figure>
-                    <img class="onder-media" src="assets/" alt="3D foto's van het huis">
+                    <img class="onder-media" src="assets/3Dtour.JPG" alt="3D foto's van het huis">
                     <figcaption>3D tour</figcaption>
                 </figure>
             </section>
 
-            <!-- <section>
-                <h1>Apollolaan 11</h1>
-                <p>1077 AA Amsterdam</p> <p>Niewe pijp</p>
-                <p>$3.250.000 k.k.</p>
-                <p>wat worden mijn maandlasten</p>
-                <label><img src="assets/kaart.webp">kaart</label>
-            </section> -->
+            <hr>
 
-            <section>
+            <section class="huis-info">
                 <h1>Apollolaan 11</h1>
-                <p>1077 AA Amsterdam</p>
+                <p id="woonplaats">1077 AA Amsterdam</p>
                 <a href="#">Niewe pijp</a>
+
                 <dl>
                     <img class="icoon" id="huisje" src="assets/huisOppervlakte.png" alt="">
-                    <dt>181m2</dt>
+                    <dt>181 m2</dt>
 
                     <img class="icoon" id="huis-tuin" src="assets/perceel.png" alt="">
-                    <dt>204m2</dt>
+                    <dt>204 m2</dt>
 
                     <img class="icoon" id="kamers" src="assets/slaapkamers.png" alt="">
                     <dt>7</dt>
@@ -84,17 +100,26 @@
 
                 <dl>
                     <img class="icoon" id="rekenmachine" src="assets/rekenmachine.png" alt="">
-                    <button popovertarget="popup">Wat worden mijn maandlasten?</button>
+                    <button popovertarget="popup" id="maandlasten-button">Wat worden mijn maandlasten?</button>
                     <dialog popover id="popup">
                         <p>Voorbeeld van maandlasten.</p>
-                        <button popovertarget="popup" popovertargetaction="hide">Terug naar site</button>
+                        <button popovertarget="popup" popovertargetaction="hide" >Terug naar site</button>
                     </dialog>
                 </dl>
             </section>
 
-            <section>
-                <h2>omschrijving</h2>
+            <hr>
+
+            <section class="omschrijving">
+                <h2>Omschrijving</h2>
                 <p>Bent u op zoek naar een ruim vrijstaand huis met een compleet woonprogramma op de begane grond, veel sfeer, comfort en een fijne tuin? Dan bent u hier aan het juiste adres!</p>
+                <p>De oprit met grind en karakteristieke klinkerbestrating is het intro van deze compositie van kwaliteit, sfeer, comfort, ruimte en rust. De basis van haar kwaliteiten zit hem in het feit dat de woning in 2015 geheel is gerenoveerd.</p>
+                <p>Het gebruik van hoogwaardige materialen voor de sanitaire ruimten en de luxe afwerking van vloeren en wanden is daar debet aan. Bovendien is de combinatie van de oude boerderij met karakteristieke gebinten en de strakke afwerkingen van wanden, plafonds en vloeren een lust voor het oog. </p>
+                <p>De geloogde deuren naar de opkamer zijn een ware eyecatcher. De strakke keuken met allerhande inbouwapparatuur en kookeiland staat symbool voor deze ontmoeting van een landelijke woonboerderij met modern comfort. Ook de badkamer met inloopdouche, 2e toilet en wastafelmeubel past prima in deze ambiance.</p>
+                <p>Het riante woonoppervlak van 303 m² is ingericht zoals het hoort! Een grote woonkamer met open keuken, een lekkere werkkamer en een sfeervolle ‘opkamer’. Het is er allemaal voor jou. Ook de verdieping is nagenoeg perfect. Een leuk detail is de slaapvide bij één van de slaapkamers. De geïnstalleerde ‘barndeur’ hoort hier ook echt thuis</p>
+                <p>Aan duurzaamheid is natuurlijk ook gedacht. De aanwezigheid van de zonnepanelen bewijst dat. Bovendien is het huis volledig thermisch geïsoleerd en voorzien van vloerverwarming (Nefit H.R.). Het beschikt over een energielabel A.</p>
+                <p>Altijd al de wens gehad om een Bed & Breakfast te bezitten? Dit is je kans. De bijgebouwen lenen zich hier perfect voor. Ook deze ruimten zijn een voorbeeld van landelijke allure in een comfortabele en moderne jas.</p>
+                <p>Het totale gebruiksoppervlak van de bijgebouwen is 94 m² en zonder meer fors te noemen. De beoogde functies zijn legio. Ook bedrijf aan huis of wellicht de mogelijkheid voor mantelzorg behoren daartoe.</p>
             </section>
         </main>
 

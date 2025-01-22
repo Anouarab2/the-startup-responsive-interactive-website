@@ -1,87 +1,278 @@
-body{
+body {
     margin: 0;
-    font-family: Roboto;
+    font-family: var(--main-font);
 }
 
-header{
+header {
     background-color: var(--main-color);
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-inline: 1em;
+    overflow: hidden;
+    padding-block: 1em;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--link-color);
 }
 
-header li{
+.menu-button {
+    width: 3em;
+    height: 3em;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+
+    .move{
+        span:nth-of-type(1){
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+    
+        }
+    }
+
+    p {
+        margin-top: 2.4em;
+        margin-left: -.25em;
+        color: var(--secondary-text-color);
+    }
+
+    span{
+        height: .3em;
+        width: 100%;
+        background-color: var(--secondary-text-color);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: .4s ease;
+        color: white;
+    }
+
+    span:nth-of-type(1){
+        top: 25%;
+    }
+
+    span:nth-of-type(3){
+        top: 75%;
+    }
+}
+
+.menubutton.move span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.navigatie {
+    display: flex;
     list-style: none;
+    gap: 1em;
+    font-size: .6em;
+
+    @media(min-width: 400px){
+        font-size: 1em;
+    }
+    a{
+        color: var(--secondary-text-color);
+    }
 }
 
-.logo{
-    height: 2.5em;
-    width: 7em;
+.huis-opties {
+    background-color: #ff9a1f5d;
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    list-style: none;
+    padding: 2em;
+    gap: 1em;
+    /* margin-right: -10em; */
+    position: fixed;
+    right: -19em;
+    top: -1em;
+    transition: .3s ease-in;
+    height: 100%;
+    width: 15em;
+
+    li {
+        font-size: 1.5em;
+    }
+
+
+    li:nth-of-type(1) {
+        margin-top: 3em;
+    }
 }
 
-main{
+.move {
+    right: 0;
+}
+
+.logo {
+    height: 1em;
+    width: 3em;
+}
+
+main {
     display: grid;
 }
 
-.foto-section{
-    position: relative;
+.interactieve-buttons {
+    /* display: grid;
+    flex-direction: row;
+    gap: 5em; */
+    position: fixed;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
-.main-foto{
-    width: 100vw;
-}
-
-.bewaar-deel{
-    /* position: absolute; */
+.bewaar-deel {
+    position: fixed;
     z-index: 999;
     background-color: var(--main-background-color);
-    /* background-color: red; */
-    /* width: 3em; */
-    /* height: 100em; */
-    border: none;
-    padding: .5em;
+    border: solid var(--link-color);
+    color: var(--link-color);
     border-radius: var(--border-radius-small);
-    border: solid var(--main-text-color);
+    padding: .5em;
+
+    &:hover{
+        background-color: var(--detail-color);
+    }
 }
 
-.active{
+#bewaar-button {
+    margin-left: 4em;
+}
+
+#deel-button {
+    /* margin-left: 1em;
+    margin-top: 1em; */
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: 6fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: .1em;
+    overflow: hidden;
+}
+
+.main-foto {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 100vw;
+
+    @media(min-width: 700px){
+        grid-column: 1/2;
+        grid-row: 1/-1;
+        width: 75vw;
+    }
+
+    @media(min-width: 1000px){
+        grid-column: 1/2;
+        grid-row: 1/-1;
+        width: 60vw;
+    }
+}
+
+.woonkamer-foto {
+    display: none;
+
+    @media(min-width: 700px){
+        grid-column: 2/-1;
+        grid-row: 1/2;
+        width: 25vw;
+        display: block;
+    }
+
+    @media(min-width: 1000px ){
+        grid-column: 2/3;
+        grid-row: 1/2;
+        width: 20vw;
+    }
+}
+
+.gang-foto {
+    display: none;
+
+    @media(min-width: 700px){
+        grid-column: 2/-1;
+        grid-row: 2/-1;
+        width: 25vw;
+        display: block;
+    }
+
+    @media(min-width: 1000px ){
+        grid-column: 3/-1;
+        grid-row: 1/2;
+        width: 20vw;
+    }
+}
+
+.slaapkamer-foto{
+    display: none;
+    
+    @media(min-width: 1000px ){
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 20vw;
+        display: block;
+    }
+}
+
+.badkamer-foto{
+    display: none;
+
+    @media(min-width: 1000px ){
+        grid-column: 3/-1;
+        grid-row: 2/3;
+        width: 20vw;
+        display: block;
+    }
+}
+
+.active {
     /* scale: 2; */
     /* transition-duration: 1s; */
     animation-name: move;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-iteration-count: 1;
 }
 
-.bewaar-deel:hover{
-    background-color: var(--detail-color);
-}
-
-.media-section{
+.media-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
 }
 
-figure{
+figure {
     /* max-height: 8em; */
     width: 6em;
 }
 
-video.groter{
-    /* scale: 3; */
-    /* z-index: 999; */
+video {
+    width: 80%;
+}
+
+.groter{
     width: 10em;
     height: 10em;
 }
 
-.onder-media{
+.video-button {
+    all: unset;
+}
+
+.onder-media {
     width: 6em;
     height: 4em;
     /* max-height: 4em; */
@@ -89,52 +280,112 @@ video.groter{
     border-radius: var(--border-radius-big);
 }
 
-video{
-    width: 10em;
+hr{
+    border: none;
+    height: 1px;
+    background: var(--detail-color);
+    margin: 20px 0;
 }
 
-dl{
-    display: grid;
+.huis-info {
+    margin-left: 2em;
 }
 
-.icoon{
+h1 {
+    font-size: var(--heading1-small);
+
+    @media(min-width: 700px){
+        font-size: var(--heading1-medium);
+    }
+
+    @media(min-width: 1000px){
+        font-size: var(--heading1-big);
+    }
+}
+
+dl {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+dt {
+    margin-left: -1em;
+}
+
+#woonplaats{
+    color: var(--detail-color);
+}
+
+#maandlasten-button {
+    all: unset;
+    color: var(--link-color);
+}
+
+.icoon {
     width: 2em;
     height: 2em;
 }
 
-@keyframes move{
-    10%{
+.omschrijving {
+    /* margin-left: 2em; */
+    padding-inline: 2em;
+    @media(min-width: 700px){
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 50%;
+    }
+}
+
+h2{
+    font-size: var(--heading2-small);
+
+    @media(min-width: 700px){
+        font-size: var(--heading2-medium);
+    }
+}
+
+@keyframes move {
+    10% {
         transform: translateX(2em) translateY(-2em);
     }
-    20%{
+
+    20% {
         transform: translateX(6em) translateY(-4em);
     }
-    30%{
+
+    30% {
         transform: translateX(8em) translateY(-6em);
     }
-    40%{
+
+    40% {
         transform: translateX(9em) translateY(-8em);
     }
-    50%{
+
+    50% {
         transform: translateX(10em) translateY(-10em);
     }
 
-
-    60%{
+    60% {
         transform: translateX(10em) translateY(-10em);
     }
-    70%{
+
+    70% {
         transform: translateX(9em) translateY(-8em);
     }
-    80%{
+
+    80% {
         transform: translateX(8em) translateY(-6em);
     }
-    90%{
+
+    90% {
         transform: translateX(6em) translateY(-4em);
     }
-    100%{
-        transform: translateX(2em) translateY(-2em);
-    
-    }
 
+    100% {
+        transform: translateX(2em) translateY(-2em);
+
+    }
 }
