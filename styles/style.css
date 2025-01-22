@@ -100,6 +100,12 @@ a {
     }
     a{
         color: var(--secondary-text-color);
+        padding: 1em;
+
+        &:hover{
+            background-color: var(--main-color-hover);
+        }
+
     }
 }
 
@@ -116,7 +122,6 @@ a {
     position: fixed;
     right: -19em;
     top: -1em;
-    /* transition: .3s ease-in; */
     transition: .5s cubic-bezier(.54,.48,.57,1.77);
     height: 100%;
     width: 15em;
@@ -155,9 +160,6 @@ main {
 }
 
 .interactieve-buttons {
-    /* display: grid;
-    flex-direction: row;
-    gap: 5em; */
     position: fixed;
     margin-left: 1em;
     margin-top: 1em;
@@ -180,11 +182,6 @@ main {
 
 #bewaar-button {
     margin-left: 4em;
-}
-
-#deel-button {
-    /* margin-left: 1em;
-    margin-top: 1em; */
 }
 
 .fotos {
@@ -270,8 +267,6 @@ main {
 }
 
 .active {
-    /* scale: 2; */
-    /* transition-duration: 1s; */
     animation-name: move;
     animation-duration: .5s;
     animation-iteration-count: 1;
@@ -285,7 +280,6 @@ main {
 }
 
 figure {
-    /* max-height: 8em; */
     width: 6em;
 }
 
@@ -305,7 +299,6 @@ video {
 .onder-media {
     width: 6em;
     height: 4em;
-    /* max-height: 4em; */
     border: solid var(--main-text-color);
     border-radius: var(--border-radius-big);
 }
@@ -361,7 +354,6 @@ dt {
 }
 
 .omschrijving {
-    /* margin-left: 2em; */
     padding-inline: 2em;
     @media(min-width: 500px){
         margin-left: 15em;
@@ -370,8 +362,6 @@ dt {
     @media(min-width: 700px){
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
         width: 50%;
     }
 }
@@ -386,7 +376,16 @@ h2{
 
 
 footer{
-    background-color: var(--main-background-color);
+    background-color: var(--detail-color);
+    padding-block: 2em;
+    ul{
+        display: grid;
+        justify-content: center;
+        gap: 1.5em;
+        @media(min-width:510px){
+            display: flex;
+        }
+    }
 }
 @keyframes move {
     10% {

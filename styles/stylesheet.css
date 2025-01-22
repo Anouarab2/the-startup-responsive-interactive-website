@@ -2,6 +2,7 @@ body{
 
     /* kleuren */
     --main-color: #ff9a1f;
+    --main-color-hover:#e68b1b;
     --link-color: #0071b3;
     --main-text-color: black;
     --secondary-text-color: white;
