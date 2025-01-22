@@ -14,23 +14,7 @@ function bewaarHuis(){
     bewaren.classList.toggle('active')
 }
 
-// function tekstAnders(){
-//     tekst.textContent = 'Bewaard';
-// }
-
 bewaren.addEventListener('animationend', bewaarHuis)
-// verander.addEventListener('animationend', tekstTerug )
-
-
-
-const scale = document.querySelector('.video-figure');
-const groter = document.querySelector('video');
-
-scale.addEventListener('click', videoGroter)
-
-function videoGroter(){
-    scale.classList.toggle('groter')
-}
 
 
 const openMenu = document.querySelector('.menu-button');
