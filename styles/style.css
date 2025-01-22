@@ -28,6 +28,7 @@ a {
     background: none;
     outline: none;
     border: none;
+    cursor: pointer;
 
     .move{
         span:nth-of-type(1){
@@ -41,6 +42,7 @@ a {
         margin-top: 2.4em;
         margin-left: -.25em;
         color: var(--secondary-text-color);
+        z-index: 1;
     }
 
     span{
@@ -55,18 +57,36 @@ a {
         color: white;
     }
 
-    span:nth-of-type(1){
+    span:nth-child(1){
         top: 25%;
+        width: 90%;
     }
 
-    span:nth-of-type(3){
+    span:nth-child(3){
         top: 75%;
+        width: 70%;
     }
 }
 
-.menubutton.move span:nth-child(1){
+.menu-button.move p{
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.menu-button.move span:nth-child(1){
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
+    width: 100%;
+}
+
+.menu-button.move span:nth-child(2){
+    opacity: 0;
+}
+
+.menu-button.move span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
 }
 
 .navigatie {
@@ -84,26 +104,30 @@ a {
 }
 
 .huis-opties {
-    background-color: #ff9a1f5d;
+    background-color: #ff9a1f7d;
     backdrop-filter: blur(10px);
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     list-style: none;
     padding: 2em;
     gap: 1em;
-    /* margin-right: -10em; */
     position: fixed;
     right: -19em;
     top: -1em;
-    transition: .3s ease-in;
+    /* transition: .3s ease-in; */
+    transition: .5s cubic-bezier(.54,.48,.57,1.77);
     height: 100%;
     width: 15em;
 
     li {
         font-size: 1.5em;
+        color: var(--secondary-text-color);
+    }
+
+    a{
+        color: var(--secondary-text-color);
     }
 
 
@@ -119,10 +143,15 @@ a {
 .logo {
     height: 1em;
     width: 3em;
+    @media(min-width:500px){
+        height: 2.5em;
+        width: 7em;
+    }
 }
 
 main {
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .interactieve-buttons {
@@ -142,6 +171,7 @@ main {
     color: var(--link-color);
     border-radius: var(--border-radius-small);
     padding: .5em;
+    cursor: pointer;
 
     &:hover{
         background-color: var(--detail-color);
@@ -250,7 +280,7 @@ main {
 .media-section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     overflow-x: scroll;
 }
 
